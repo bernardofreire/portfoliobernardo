@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-primary: rgb(24, 24, 24);
+    --color-primary: white;
+    --color-secundary:#64ffda;
+}
+
+/* Social media menu */
+
+.container-sm{
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+}
+
+.container-sm .social-media::after{
+    content: '';
+    width: 1px;
+    height: 90px;
+    background-color: var(--background-primary);
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+}
+
+.container-sm .social-media li{
+    list-style: none;
+    text-align: center;
+}
+
+.container-sm .social-media li a{
+    color: var(--color-primary);  
+    transition: color .35s ease;
+}
+
+.container-sm .social-media li a:hover{
+    color: var(--color-secundary);  
+}
+
+
+.container-sm .social-media li a i{
+    padding: 2px;
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem; 
+}
+
+/* Header section */
+
+.header-section{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow:hidden;
+    background-color: var(--background-primary);
+}
+
+.header-section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    font-family: 'Parisienne', cursive;         
+    font-size: 9rem;
+    line-height: 1;
+    color: var(--color-primary);
+    z-index: 2;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+h3 span{
+    color: var(--color-secundary);
+}
+
+.about-section{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* About section */
+
+.about-section{
+    background-color: var(--background-primary);
+}
+
+
+
