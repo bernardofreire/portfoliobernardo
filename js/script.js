@@ -1,3 +1,5 @@
+AOS.init();
+
 
 const header = document.getElementById('header')
 header.addEventListener('mousemove', parallax)
@@ -14,4 +16,15 @@ function parallax(e) {
     })
 }
 
+let text = document.getElementById('text-about')
 
+
+window.addEventListener('scroll', function(){
+    var value = window.scrollY;
+
+    text.style.left = value/40 + '%'
+})
+
+window.addEventListener('scroll', function(){
+    console.log(pageYOffset)
+})
