@@ -1,5 +1,8 @@
+// AOS jquery start
+
 AOS.init();
 
+// Parallax effect header
 
 const header = document.getElementById('header')
 header.addEventListener('mousemove', parallax)
@@ -16,6 +19,8 @@ function parallax(e) {
     })
 }
 
+// Parallax scroll effect about me
+
 let text = document.getElementById('text-about')
 
 
@@ -25,6 +30,19 @@ window.addEventListener('scroll', function(){
     text.style.left = value/40 + '%'
 })
 
+
+// Project page side
+
+let cubo = document.querySelectorAll('.cubo')
+
 window.addEventListener('scroll', function(){
-    console.log(pageYOffset)
+
+    cubo.forEach((cub)=>{
+    const speed = cub.getAttribute('data-speed')
+    var value = window.scrollY;
+
+    cub.style.bottom = value/speed + '%'
+    })
+    
 })
+
