@@ -118,24 +118,28 @@ h3 span{
     overflow-x: hidden;
 }
 
+#text-about{
+    position: relative;
+    font-size: 14em;
+    left: 0;
+    color: var(--color-terc);
+    transition: all .6s  ease-out;
+    line-height: 1;
+    user-select: none;
+    z-index: 1;
+}
+
 .about-section p{
     max-width: 800px;
     color: var(--color-primary);
     margin: 0 auto;
     font-family: var(--font-secundary);
     line-height: 1.9;
-    padding: 2rem;
+    padding: 0 2rem;
+    z-index: 5;
 }
 
 
-#text-about{
-    position: relative;
-    font-size: 10em;
-    top: 5rem;
-    left: 0;
-    color: var(--color-terc);
-    transition: all .6s  ease-out;
-}
 
 /* Projects section */
 
@@ -148,16 +152,17 @@ h3 span{
 }
 
 .projects-section .about-project{
-    width: 50%;
+    width: 30%;
     height: 100%;
 }
 
 .projects-section .projects-page{
-    width: 50%;
+    width: 70%;
     height: 100%;
     /* background-color: white; */
     padding: 3rem;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* About project side */
@@ -195,16 +200,20 @@ h3 span{
 }
 
 .projects-section .about-project .btn:hover{
-
     color: var(--color-secundary);
+}
+
+.projects-section .about-project .btn:active{
+    background-color: var(--color-primary);
+    color:black
 }
 
 
 /* Project page side */
 
 .cubo{
-    width: 40em;
-    height: 20em;
+    width: 55em;
+    height: 30em;
     border-radius: 10px;
     position: absolute;
 }
