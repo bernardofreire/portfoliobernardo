@@ -33,16 +33,15 @@ window.addEventListener('scroll', function(){
 
 // Project page side
 
-let cubo = document.querySelectorAll('.cubo')
+// let cards = document.querySelectorAll('.cards')
 
-window.addEventListener('scroll', function(){
+// window.addEventListener('scroll', function(){
 
-    cubo.forEach((cub)=>{
-    const speed = cub.getAttribute('data-speed')
-    var value = window.scrollY;
+//     cards.forEach((cub)=>{
+//     const speed = cub.getAttribute('data-speed')
+//     var value = window.scrollY;
 
-    cub.style.bottom = value/speed + '%'
-    })
+//     cub.style.bottom = value/speed + '%'
+//     })
     
-})
-
+// })
