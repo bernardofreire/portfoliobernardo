@@ -31,6 +31,9 @@ window.addEventListener('scroll', function(){
 })
 
 
+
+
+
 // Project page side
 
 // let cards = document.querySelectorAll('.cards')

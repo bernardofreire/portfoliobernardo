@@ -17,6 +17,10 @@
     --font-secundary: 'Poppins', sans-serif;
 }
 
+body{
+    overflow: overlay;
+}
+
 /* Social media menu */
 
 .container-sm{
@@ -129,6 +133,7 @@ h3 span{
     line-height: 1;
     user-select: none;
     z-index: 1;
+    overflow: hidden;
 }
 
 .about-section p{
@@ -151,14 +156,7 @@ h3 span{
     height: 100vh;
     background-color: var(--background-primary);
     display: flex;
-}
-
-.left{
     padding: 6rem 0 0 8rem;
-}
-
-.right{
-    padding: 6rem 8rem 0 0;
 }
 
 .projects-section .about-project{
@@ -175,19 +173,6 @@ h3 span{
 
 /* Project About side  */
 
-    /* Box text about right side */
-
-.right-text h3{
-    text-align: end;
-}
-
-.right-text h2{
-    text-align: end;
-}
-
-.right-text p{
-    text-align: justify;
-}
 
     /* Box text about left side */
     
@@ -238,10 +223,13 @@ h3 span{
 
 
 .cards{
-    width: 50em;
     height: auto;
     border-radius: 10px;
     position: absolute;
+}
+
+.card1{
+    width: 50em;
 }
 
 .card2{
@@ -252,6 +240,19 @@ h3 span{
 .card3{
     width: 25em;
     right: 0%;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(63, 62, 62, 0.8);
+    border-radius: 20px;
+
 }
 
 
@@ -279,6 +280,12 @@ h3 span{
         opacity: 1;
     }
 }
+
+
+
+/*=================== RESPONSIVE ===================*/
+
+
 
 @media (max-width: 1130px) {
     
@@ -322,9 +329,33 @@ h3 span{
     right: 0%;
 }
 
+}
 
+@media (max-width: 768px){
 
+    .container-sm{
+        display: none;
+    }
 
+    .projects-section .projects-page{
+        width: 100%;
+        
+    }
+
+    .cards{
+        width: 30em;
+
+    }
+
+    .card2{
+        width: 13em;
+        
+    }
+    .card3{
+        width: 15em;
+
+    }
+    
 }
 
 
