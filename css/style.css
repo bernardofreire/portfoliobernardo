@@ -87,6 +87,10 @@ body{
     object-fit: cover;
 }
 
+.layer{
+    animation: moveBanner 1s 0.3s both;
+}
+
 h1{
     font-family: var(--font-primary);         
     font-size: 7.6rem;
