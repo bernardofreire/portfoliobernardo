@@ -134,7 +134,7 @@ h3 span{
     position: relative;
     font-family: var(--font-secundary);
     font-weight: 300;
-    font-size: 14em;
+    font-size: 10em;
     left: 0;
     color: var(--color-terc);
     transition: all .6s  ease-out;
@@ -298,7 +298,7 @@ h3 span{
 /* About section */
 
 #text-about{
-    font-size: 10em;
+    font-size: 8em;
 
 }
 
@@ -356,6 +356,11 @@ h3 span{
     .projects-section .image-project{
         width: 100%;
         
+    }
+
+    #text-about{
+        font-size: 4em;
+    
     }
 
     /* .cards{
