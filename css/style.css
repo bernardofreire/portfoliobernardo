@@ -172,7 +172,7 @@ h3 span{
     width: 35%;
     height: 100%;
     /* background-color: green; */
-    margin-left: 5rem;
+    margin-left: 7rem;
     
 }
     
@@ -228,25 +228,67 @@ h3 span{
     overflow: hidden;
 }
 
+.img-mobile{
+    display: none;
+}
+
 .card1{
-    width: 50em;
+    width: 70%;
+    min-width: 500px;
     height: auto;
     border-radius: 10px;
-    position: absolute;
 }
 
 .card2{
     position: absolute;
-    width: 20em;
-    right: 30%;
+    width: 30%;
+    min-width: 300px;
+    right: 27%;
     top: 20%;
     
 }
 .card3{
     position: absolute;
-    width: 25em;
+    width: 35%;
+    min-width: 300px;
     right: 0%;
 }
+
+/* Skills section */
+
+.skills{
+    color: var(--color-primary);
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills h3{
+    font-family: var(--font-secundary);
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.skill-section{
+    width: 100%;
+    padding: 2rem 3rem 20rem;
+    background-color: var(--background-primary);
+    overflow-x: hidden;
+}
+
+#text-skill{
+    position: relative;
+    font-family: var(--font-secundary);
+    font-weight: 300;
+    font-size: 10em;
+    left: 0;
+    color: var(--color-terc);
+    transition: all .6s  ease-out;
+    line-height: 1;
+    user-select: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
 
 /* Scroll Bar */
 
@@ -260,6 +302,8 @@ h3 span{
     border-radius: 20px;
 
 }
+
+
 
 
 /* Animations */
@@ -324,8 +368,19 @@ h3 span{
     max-width: 80%;
 }
 
+.img-mobile{
+    display: block;
+    width: 100%;
+    min-width: 200px;
+    margin: 0 auto;
+    margin-top: 3rem; 
+    border-radius: 5px;
+    object-fit: cover;
+    
+}
+
 .cards{
-    position: relative;
+    display: none;
 }
 
 .card2{

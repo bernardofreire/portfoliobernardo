@@ -1,6 +1,3 @@
-// AOS jquery start
-
-AOS.init();
 
 // Parallax effect header
 
@@ -28,6 +25,17 @@ window.addEventListener('scroll', function(){
     var value = window.scrollY;
 
     text.style.left = value/40 + '%'
+})
+
+// Parallax scroll effect skills
+
+let skill = document.getElementById('text-skill')
+
+
+window.addEventListener('scroll', function(){
+    var value = window.scrollY;
+
+    skill.style.left = value/70 + '%'
 })
 
 
