@@ -35,7 +35,7 @@ let skill = document.getElementById('text-skill')
 window.addEventListener('scroll', function(){
     var value = window.scrollY;
 
-    skill.style.left = value/70 + '%'
+    skill.style.left = value/60 + '%'
 })
 
 
