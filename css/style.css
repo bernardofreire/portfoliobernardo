@@ -173,7 +173,7 @@ h3 span{
     height: 100%;
     /* background-color: green; */
     margin-left: 7rem;
-    
+    overflow: hidden;
 }
     
 .projects-section .about-project h3{
