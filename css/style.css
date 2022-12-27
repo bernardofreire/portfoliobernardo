@@ -391,17 +391,47 @@ h3 span{
     right: 0%;
 }
 
+.skill-section{
+    padding: 12rem 3rem 20rem;
+}
+
 }
 
 @media (max-width: 768px){
+
+
+    /* Social media */
 
     .container-sm{
         display: none;
     }
 
+    /* Title header */
+
+    .header-section h1{
+        font-size: 5rem;
+    }
+
+    .header-section h3{
+        font-size: 2rem;
+    }
+
+    /* About section */
+
+    .about-section{
+        padding: 2rem 3rem 10rem;
+    }
+
     .about-section p{
         padding: 0;
     }
+
+    #text-about{
+        font-size: 4em;
+    }
+
+
+    /* Project section */
 
     .projects-section .about-project{
         margin: auto;
@@ -413,24 +443,16 @@ h3 span{
         
     }
 
-    #text-about{
-        font-size: 4em;
+    /* Skill section */
     
+    #text-skill{
+        font-size: 4em;
+    }
+    
+    .skills h3{
+        font-size: 1.4em;
     }
 
-    /* .cards{
-        width: 30em;
-
-    }
-
-    .card2{
-        width: 13em;
-        
-    }
-    .card3{
-        width: 15em;
-
-    } */
     
 }
 
